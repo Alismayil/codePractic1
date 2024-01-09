@@ -18,10 +18,11 @@ function Detail() {
 
 
     return (
-        <div>
+        <div className='basketCard' style={{border:"1px solid black", width:"200px", display:"flex", justifyContent:"center",
+                    alignItems:"center", flexDirection:"column"}}>
             {product ?
                 <>
-                    <img src={product.image} alt="" />
+                    <img src={product.image} alt="" style={{maxWidth:"100px"}} />
                     <p>{product.name}</p>
                 </> :
                 ""}
